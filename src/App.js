@@ -13,16 +13,9 @@ const folders = [
   { title: "three", content: "Third folder here" },
 ];
 
-function App() {
+export default function App() {
   const [showClock, setShowClock] = useState(true);
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     showClock: true
-  //   };
-  // }
   const toggleClock = () => setShowClock((prev) => !prev);
-  // toggleClock = () => this.setState({ showClock: !this.state.showClock });
 
   return (
     <div className="widgets">
@@ -34,5 +27,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
